@@ -1,0 +1,50 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SMS Spam/Ham Detector</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    </head> <br/>
+
+    <body>
+        <p><b>Disclaimer : </b>This web application is created just for academic purpose. It is just created for learning end-to-end flow of Machine Learning models. <br/>
+            <i><b>So please do not use this application for detection purpose as this model is trained with limited data.</b></i></p>
+
+        <!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span>Spam Detector</span> for (SMS)</h2>
+            <div class='description'>
+    			<p><b>A Machine Learning Web Application using NLP, Built with Flask, Deployed using Heroku...</b></p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+        		<textarea class='message-box' name="message" rows="10" cols="75" placeholder="Enter Your Message Here..."></textarea><br/><br/>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <p><b>Note : </b>As I am not a web developer, I have not created a robust application. If it crashes after clicking on 'Predict', please reload the application and try again!!</p>
+
+        <p><b>Examples of Spam messages: </b></p>
+        <p>1 : Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's</p>
+        <p>2 : URGENT! You have won a 1 week FREE membership in our £100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.dbuk.net LCCLTD POBOX 4403LDNW1A7RW18</p>
+
+        <p><b>Examples of Ham messages: </b></p>
+        <p>1 : Pls go ahead with watts. I just wanted to be sure. Do have a great weekend. Abiola</p>
+        <p>2 : Sorry, I'll call later in meeting.</p><br/>
+
+        <!-- Footer -->
+        <!-- <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/anujvyas/Spam-SMS-Classifier-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made with ❤️ by Anuj Vyas.</p>
+        </div> -->
+
+    </body>
+</html>
