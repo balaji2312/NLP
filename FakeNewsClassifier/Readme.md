@@ -3,7 +3,7 @@
 ## Overview
 - The News Collection dataset contains about 20800 news records with their titles, authors and actuals news. This dataset is present on kaggle. You can find the link to the dataset below. 
 
-- These records have labels as 1/0 i.e real/fake. I have trained the model using 1 independent feature i.e 'title' due to low computation power of my system. You can train a multiclass classification model based on your system's computational power.
+- These records have labels as 1/0 i.e real/fake. I have trained the model using 1 independent feature i.e 'title' due to low computation power of my system. You can train a multiclass classification model based on your system's computational power
 
 ## Motivation
 - Nowadays there are many news hovering on browsers,social media, etc which people don't know are real or fake.
